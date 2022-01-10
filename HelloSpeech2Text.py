@@ -1,4 +1,7 @@
 import speech_recognition as sr
+# pip install SpeechRecognition
+# pip install pipwin
+# pipwin install pyaudio
 
 recognizer = sr.Recognizer()
 

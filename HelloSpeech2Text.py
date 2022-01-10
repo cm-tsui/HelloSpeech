@@ -6,7 +6,6 @@ import speech_recognition as sr
 recognizer = sr.Recognizer()
 
 # recording the sound
-
 with sr.Microphone() as source:
     print("Adjusting noise ")
     recognizer.adjust_for_ambient_noise(source, duration=1)
@@ -15,7 +14,6 @@ with sr.Microphone() as source:
     print("Done recording")
 
 # Recorgnizing the Audio
-
 try:
     print("Recognizing the text")
     text = recognizer.recognize_google(
